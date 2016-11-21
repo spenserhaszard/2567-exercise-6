@@ -134,16 +134,7 @@ form a:hover {
 /*--------------------------------------------------------------
 1.5 - LISTS
 -------------------------------------------------------------- */
-dt, dd {
-	display: inline-block
-}
-dt {
-	font-weight:100;
-	width: 20px;
-}
-dd {
-	font-weight: 600;
-}
+
 /*--------------------------------------------------------------
 2.0 - MAIN MENU
 -------------------------------------------------------------- */
@@ -212,7 +203,16 @@ figure {
 	float: left;
 	padding-right: 0;
 }
-
+footer ul  {
+	list-style: none;
+	padding: 0;
+}
+footer ul li {
+	display: block;
+}
+footer li a {
+	margin-left: 20px;
+}
 /*--------------------------------------------------------------
 3.1 - SINGLE COLUMNS
 -------------------------------------------------------------- */
@@ -355,7 +355,7 @@ figure {
 -------------------------------------------------------------- */
 
 #hero { 
-  background: url(../img/hero.jpeg) no-repeat center center fixed; 
+  background: url(../img/hero.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -429,9 +429,34 @@ figure {
 
 
 
-
-
 @media screen and (max-width: 768px) {
-	
-	
+	row {
+		overflow: auto;
+	}
+	.col-3-5, .col-1-2, .col-1-4 {
+		width: 100%;
+	}
+	nav {
+		text-align: center;
+	}
+	nav li {
+		display: block;
+		padding: 10px 0;
+	}
+	h1 {
+		font-size: 4.5rem;
+	}
+	#services .col-1-4 {
+		margin-bottom: 30px;
+	}
+	[class*="col-"] {
+		padding: 0;
+	}
+	#map {
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
 }

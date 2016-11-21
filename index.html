@@ -1,8 +1,8 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, intitial-scale=1">
+<meta name="viewport" content="wilih=device-wilih, intitial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -51,12 +51,14 @@
 <!-- ===========OUR SERVICES=============== -->
 
 <section class="p-t-lg p-b-xl" id="services">
-	<header class="wrapper">
+	<div class="wrapper">
     	<div class="row txt-center">
         	<div class="col-9-12 center-block">
+           	<header>
             	<h2 class=" txt-uppercase">Our Services</h2>
                 <p class="lead txt-uppercase">Lorem ipsum dolor sit amet, usu <span>nemore oporteat</span> lobortis ad, eos soleat verear cotidieque id. </p>
-                <p>Vis te veri tritani, at quodsi commune has, probo maiestatis ei has. Molestie suscipiantur concludaturque cu has, nam ne omnesque antiopam, & indoctum complectitur pro ad. Ea cum diam malorum vivendum, vel quod commodo repudiandae et. </p>
+                <p>Vis te veri tritani, at quodsi commune has, probo maiestatis ei has. Molestie suscipiantur concludaturque cu has, nam ne omnesque antiopam, &amp; indoctum complectitur pro ad. Ea cum diam malorum vivendum, vel quod commodo repudiandae et. </p>
+           	</header>
             </div>
         </div>
         <div class="row txt-center">
@@ -89,16 +91,16 @@
                 </div>
             </section>
         </div>
-    </header>
+    </div>
 </section>
 
 
 <footer class="p-t-lg p-b-lg" id="contact">
-	<header class="wrapper">
+	<div class="wrapper">
     	<div class="row txt-center">
         	<div class="col-9-12 center-block">
-            	<h2 class=" txt-uppercase">Contact Us</h2>
-                <p>Vis te veri tritani, at quodsi commune has, probo maiestatis ei has. Molestie suscipiantur concludaturque cu has, nam ne omnesque antiopam, indoctum complectitur pro ad. Ea cum diam malorum vivendum, vel quod commodo repudiandae et. </p>
+					<h2 class=" txt-uppercase">Contact Us</h2>
+					<p>Vis te veri tritani, at quodsi commune has, probo maiestatis ei has. Molestie suscipiantur concludaturque cu has, nam ne omnesque antiopam, indoctum complectitur pro ad. Ea cum diam malorum vivendum, vel quod commodo repudiandae et. </p>
             </div>
         </div>
         <div class="row">
@@ -109,16 +111,12 @@
                         <h4>Zendesk</h4>
                         <p class="m-t-0 m-b-lg">123 Fake Street<br/>
                         Fakersvill, FA 12345-1234</p>
-                        <dl>
-                        	<dt>Phone:</dt>
-                            <dd>123.123.1234</dd><br/>
-                            <dt>Fax:</dt>
-                            <dd>123.123.1234</dd><br/>
-                            <dt>Email:</dt>
-                            <dd>hello@zendesk.com</dd><br/>
-                            <dt>Skype:</dt>
-                            <dd>Zendesk</dd>
-                        </dl>
+                        <ul>
+                        	<li>Phone: <a href="tel:+1-1231231234">123.123.1234</a></li>
+                            <li>Fax: <a href="fax:1231231234">123.123.1234</a></li>
+                            <li>Email: <a href="mailto:hello@zendesk.com">hello@zendesk.com</a></li>
+                            <li>Skype: <a href="callto:1231231234">Zendesk</a></li>
+                        </ul>
                     </div>
                     <div class="col-1-2" id="map">
                     </div>
@@ -127,7 +125,7 @@
             <div class="col-1-2 p-t-lg">
                 <form class="row">
                 	<div class="col-1-2">
-                    <label>First & Last Name:</label>
+                    <label>First &amp; Last Name:</label>
                     <input  name="name" type="text" value="" placeholder="Name"/>
                     </div>
                     <div class="col-1-2">
@@ -144,7 +142,7 @@
                 </form>
             </div>
         </div>
-    </header>
+    </div>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
@@ -163,7 +161,7 @@ jQuery(document).ready(function($){
 			   scrollTop: $(this.hash).offset().top-0
 			 }, 500, function(){
 		
-			   // when done, add hash to url
+			   // when done, ali hash to url
 			   // (default click behaviour)
 			   window.location.hash = hash;
 			 });

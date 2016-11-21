@@ -455,6 +455,12 @@ footer li a {
 	#map {
 		margin-bottom: 50px;
 	}
+	form .col-1-2 {
+		margin: 10px 0;
+	}
+	form .col-1 {
+		padding-right: 0rem !important;
+	}
 }
 
 @media screen and (max-width: 480px) {
